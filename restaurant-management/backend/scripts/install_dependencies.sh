@@ -10,11 +10,15 @@ export NVM_DIR="$HOME/.nvm"
 # Change to application directory
 cd /home/ec2-user/restaurant-api
 
+# Fix ownership - THIS IS THE KEY FIX FOR PERMISSION ERROR
+echo "Fixing directory ownership..."
+sudo chown -R ec2-user:ec2-user /home/ec2-user/restaurant-api
+
 # Verify npm is available
 echo "Node version: $(node --version)"
 echo "NPM version: $(npm --version)"
 
-# Install production dependencies
-npm install --production
+# Install production dependencies (updated syntax)
+npm install --omit=dev
 
 echo "Dependencies installed successfully"
