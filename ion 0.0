@@ -1,0 +1,41 @@
+[33mcommit 010d6fae79ad65ab53f3e4e9ba82644afce067ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: umair-javeed <umairjaved790@gmail.com>
+Date:   Tue Dec 9 14:03:58 2025 -0500
+
+    Fix appspec.yml paths and make scripts executable
+
+[33mcommit a445b78c43efaf82b2add6f633d59ec97e6e1e81[m
+Author: umair-javeed <umairjaved790@gmail.com>
+Date:   Tue Dec 9 13:40:56 2025 -0500
+
+    add appspec.yml file
+
+[33mcommit 63c3bfd6f4ff0e950954391d948bdb147c7e4647[m
+Author: umair-javeed <umairjaved790@gmail.com>
+Date:   Tue Dec 9 01:09:42 2025 -0500
+
+    Add appspec.yml to root for CodeDeploy
+
+[33mcommit 95dd04f962cfd7831b0786507f9433d5ef9ec9d5[m
+Author: umair-javeed <umairjaved790@gmail.com>
+Date:   Tue Dec 9 00:58:07 2025 -0500
+
+    Move appspec.yml to root for CodeDeploy
+
+[33mcommit 5a2cd395ce1074cf53598cd97376c2b7637da199[m
+Author: umair-javeed <umairjaved790@gmail.com>
+Date:   Wed Dec 3 14:49:31 2025 -0500
+
+    3rd commit
+
+[33mcommit 972d72460d39acbfd6cccda900d27cf09c9b98ed[m
+Author: umair-javeed <umairjaved790@gmail.com>
+Date:   Wed Dec 3 14:20:51 2025 -0500
+
+    2nd commit
+
+[33mcommit 49ed0d616373c3a9cdee4d1f45a43b585a260a48[m
+Author: umair-javeed <umairjaved790@gmail.com>
+Date:   Mon Dec 1 23:29:54 2025 -0500
+
+    first commit

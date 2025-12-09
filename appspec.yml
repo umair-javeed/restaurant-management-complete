@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /restaurant-management/backend
     destination: /home/ec2-user/restaurant-api
     overwrite: true
 permissions:
@@ -12,19 +12,19 @@ permissions:
       - directory
       - file
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
+  ApplicationStop:
+    - location: restaurant-management/backend/scripts/application_stop.sh
       timeout: 300
       runas: ec2-user
-  ApplicationStop:
-    - location: scripts/application_stop.sh
+  AfterInstall:
+    - location: restaurant-management/backend/scripts/install_dependencies.sh
       timeout: 300
       runas: ec2-user
   ApplicationStart:
-    - location: scripts/application_start.sh
+    - location: restaurant-management/backend/scripts/application_start.sh
       timeout: 300
       runas: ec2-user
   ValidateService:
-    - location: scripts/validate_service.sh
+    - location: restaurant-management/backend/scripts/validate_service.sh
       timeout: 300
       runas: ec2-user
